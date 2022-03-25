@@ -5,7 +5,7 @@ package sef.module2.activity;
 
 /**
  * @author
- *
+ * Ilja Carenko
  */
 public class Calculator {
 
@@ -30,9 +30,7 @@ public class Calculator {
 	}
 
 	private static int subtract(int x, int y) {
-        //TODO implement subtraction
-
-		return diff;
+		return x-y;
 	}
 
 	private static int multiply(int[] numbers) {
@@ -48,14 +46,13 @@ public class Calculator {
 	private static int divide(int x, int y) {
 		int divValue = 0;
 		if (x == 0 && y == 0) {
-			//TODO complete the code so message is printed that dividing 0 with 0 is not possible
+			System.err.println("Dividing 0 by 0 is not possible");
 
 		} else if (y == 0) {
-		    //TODO complete the code so message is printed that division by 0 is not possible
+			System.err.println("Division by 0 is not possible");
 
 		} else {
-		    //TODO complete the code so that division is done
-
+			divValue = x / y;
         }
 		return divValue;
 

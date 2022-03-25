@@ -5,7 +5,7 @@ package sef.module2.activity;
 
 /**
  * @author
- *
+ * Ilja Carenko
  */
 public class AddWholeNum {
 
@@ -23,14 +23,11 @@ public class AddWholeNum {
         total = 0;
 
 		// Addition of Whole Numbers from 50 to 100
-        //TODO: complete the code. write for loop for i
-		for () {
-			//TODO: complete the code. Write addition for variable.
-        total =
-    }
+		for ( int j = 50; j<101; j++) {
+        total += j;
+        }
 		System.out.println("Addition of Whole Numbers from 50 to 100 = "+total);
 
-
-}
+    }
 
 }
