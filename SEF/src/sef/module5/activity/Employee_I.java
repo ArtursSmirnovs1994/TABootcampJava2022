@@ -10,8 +10,8 @@ public class Employee_I extends Person_I {
 	//Behavior
 	//TODO: write default constructor. Print 'I'm an Employee_I Constructor'
 	public Employee_I() {
-		salary = 0;
-		title = "Unknown";
+		this.salary = 0;
+		this.title = "Unknown";
 		System.out.println("I'm an Employee_I Constructor");
 	}
 	
