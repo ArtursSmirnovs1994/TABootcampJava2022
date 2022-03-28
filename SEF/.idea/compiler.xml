@@ -9,8 +9,6 @@
       <directory url="file://$PROJECT_DIR$/src/sef/module7" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/src/sef/module8" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/src/sef/module9" includeSubdirectories="true" />
-      <file url="file://$PROJECT_DIR$/src/sef/module2/activity/Calculator.java" />
-      <file url="file://$PROJECT_DIR$/src/sef/module2/activity/NumToWordsUsingMethod.java" />
     </excludeFromCompile>
   </component>
 </project>
