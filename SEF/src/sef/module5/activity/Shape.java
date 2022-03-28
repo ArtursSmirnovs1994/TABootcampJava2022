@@ -1,15 +1,15 @@
 package sef.module5.activity;
 
-//TODO: change Shape class to abstract
-public class Shape {
+public abstract class Shape {
 
 	public String color;
 	
 	public Shape() {
+//		this.color = "0xFFFFFF";
 	}
 	
-	//TODO:  Add abstract method calculateArea() and calculatePerimeter() with return type as double
-
+	public abstract double calculateArea();
+	public abstract double calculatePerimeter();
 	
 	public void setColor(String c) {
 		color = c;

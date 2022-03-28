@@ -2,7 +2,7 @@ package sef.module3.activity;
 
 /**
  * @author
- *
+ * Ilja Carenko
  */
 public class CalculatorClient {
 
@@ -17,30 +17,27 @@ public class CalculatorClient {
 		Calculator normalCalc = new Calculator(Calculator.CALC_TYPE_BASIC);
 		
 		System.out.println("*** Calculations will be performed using "+normalCalc.getCalculatorType()+ " calculator ***");
-		
-		// Add 
+
+		int index = 1;
+
+		// Add
 		int result = normalCalc.add(4, 5);
-		System.out.println("1) Add result is " + result);
+		System.out.printf("%d) %s result is %d%n",index++, "Addition", result);
 		
 				
 		// Multiply 
 		int[] mul = {2, 3, 4};
-		//TODO Complete the code: result should be equal to the normalCalc multiply function and int array mul should be multiplied.
-
-		System.out.println("2) Multiplication result is " + result); 
+		result = normalCalc.multiply(mul);
+		System.out.printf("%d) %s result is %d%n",index++, "Multiplication", result);
 		
-
 		//Division
-		//TODO Write code which will use normalCalc and divide function
-		//TODO Divide numbers should be 10 and 2
-		//TODO Divide result should be printed in similar style as multiply and addition
-
+		result = normalCalc.divide(10,2);
+		System.out.printf("%d) %s result is %d%n",index++, "Division", result);
 
 
 		//Subtraction
-		//TODO Write code which will use normalCalc and subtract function
-		//TODO Subtract numbers should be 10 and 2
-		//TODO Subtract result should be printed in similar style as multiply and addition
+		result = normalCalc.subtract(10,2);
+		System.out.printf("%d) %s result is %d%n",index++, "Subtraction", result);
 	}
 
 
