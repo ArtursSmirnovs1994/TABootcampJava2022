@@ -46,7 +46,6 @@ public class Calculator {
 	}
 
 	private static int divide(int x, int y) {
-		// the division value will not necessarily be integer - changed type from int to double
 		int divValue = 0;
 		if (x == 0 && y == 0) {
 			//TODO complete the code so message is printed that dividing 0 with 0 is not possible
