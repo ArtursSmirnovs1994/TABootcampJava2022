@@ -6,11 +6,11 @@ public class Person {
 	private String name;
 	
 	
-	//Behavior
+	//Constructor
 	public Person(String name){
 		this.name = name;
 	}
-	
+	//Behavior
 	public String getName() {
 		return name;
 	}

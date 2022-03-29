@@ -18,13 +18,18 @@ public class PrintNumWithWhile {
 		// Print all even numbers less than 100
 		int i = 0;
 		while(i<100){
-			System.out.println(i);
+			System.out.println("Even number    " + i);
 			i=i+2;			
 		}
 		
 		 
 		//TODO: write code to Print all odd numbers less than 100
 
+		int b = 1;
+		while(b<100){
+			System.out.println("Odd number    " + b);
+			b=b+2;
+		}
 	}
 
 }

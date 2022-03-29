@@ -13,9 +13,9 @@ public class ReferenceCastingSample {
 		s.setGrade(10);
 		
 		// Sample reference casting
-		Person_P tempPerson = s; // convert student to person
+		Person_P tempPerson = s; // convert student to person - upcasting
 		tempPerson.announce();
-		Student_P tempStudent = (Student_P)tempPerson; // convert person to student
+		Student_P tempStudent = (Student_P)tempPerson; // convert person to student - downcasting
 		tempStudent.announce();
 	}
 }

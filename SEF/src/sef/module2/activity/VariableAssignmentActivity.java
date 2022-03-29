@@ -18,6 +18,14 @@ public class VariableAssignmentActivity {
 		// 2- Update the value 
 		// 3- Print updated value to the console using System.out.println
 
+		int myInt = 27;
+		System.out.println("Hello integer, you have assigned number " + myInt);
+
+		myInt = 5;
+		System.out.println(" >>> Please note that integer value was updated");
+
+		System.out.println("Integer, your new updated value is " + myInt);
+
 	}
 
 }
