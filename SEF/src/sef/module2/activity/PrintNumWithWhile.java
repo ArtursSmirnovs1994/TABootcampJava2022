@@ -16,14 +16,20 @@ public class PrintNumWithWhile {
 		
 		
 		// Print all even numbers less than 100
+		System.out.println("Even numbers: ");
 		int i = 0;
 		while(i<100){
 			System.out.println(i);
 			i=i+2;			
 		}
-		
-		 
+
 		//TODO: write code to Print all odd numbers less than 100
+		System.out.println("Odd numbers: ");
+		int j = 1;
+		while (j < 100){
+			System.out.println(j);
+			j = j + 2;
+		}
 
 	}
 
