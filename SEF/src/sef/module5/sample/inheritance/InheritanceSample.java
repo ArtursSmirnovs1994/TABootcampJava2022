@@ -5,7 +5,7 @@ public class InheritanceSample {
 	
 	public static void main(String arg[]){
 		
-		Person_I p = new Person_I();
+		Person_I p  = new Person_I();
 		p.setName("John Doe");
 		p.setAge(18);
 		

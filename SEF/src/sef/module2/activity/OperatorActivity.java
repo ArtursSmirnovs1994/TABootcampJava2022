@@ -12,21 +12,33 @@ public class OperatorActivity {
 	public static void main(String[] args) {
 		
 		// Declare numbers to be operated
-		int i = 8;
-		int j = 5;
+		// I changed them to double, wanted to see how divide with decimals works
+		double i = 17;
+		double j = 14;
 		
 		// Subtract numbers
-		int result = i-j;
+		double result = i-j;
 		
-		// Print result
+		// Print result subtract
 		System.out.println("Difference = " + result);
 		
 		// Add numbers
+		result = i+j;
 		
-		
-		// Print result
-		
-		
+		// Print result add
+		System.out.println("Sum = " + result);
+
+		// Multiply
+		result = i*j;
+
+		// Print result multiply
+		System.out.println("Multiply = " + result);
+
+		// Divide
+		result = i/j;
+
+		// Print result divide
+		System.out.println("Divide = " + result);
 	}
 
 }

@@ -16,7 +16,7 @@ public class WhileLoopSample {
 			// increasing counter variable value so we do not have infinity loop
 			counter++;		
 		}
-		
+
 		System.out.println("\n\nDo-While Loop");
 		counter = 0;
 		// Do-While loop starts with keyword do, and in this case
