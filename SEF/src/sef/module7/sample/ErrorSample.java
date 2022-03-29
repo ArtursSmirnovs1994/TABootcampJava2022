@@ -4,14 +4,16 @@ public class ErrorSample {
 	
 	//This is an example of an error which cannot be handled programmatically 
 	public static void main(String arg[]){
-		infinity();
+//		infinity();
 	}
 	
 	//Below method calls itself and
 	//it happens infinite times because there is no exit condition
 	//At one point in time, JVM would give up and show StackOverflowError
 	public static void infinity(){
+		System.out.println("Infinity!");
 		//1 - Print a message
+		infinity();
 	
 		
 		//2 - Call infinity()

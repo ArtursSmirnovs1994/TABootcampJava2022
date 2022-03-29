@@ -31,4 +31,5 @@ public class PersonSampleTwo {
 		}
 		this.name = name;
 	}
+
 }
