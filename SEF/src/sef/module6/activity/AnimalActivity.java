@@ -2,26 +2,31 @@ package sef.module6.activity;
 
 public class AnimalActivity {
 
-    public static void main(String arg[]) {
+    public static void main(String[] args) {
 
-        //TODO: Use interfaces to declare identifiers instead of the actual classes
+        // Use interfaces to declare identifiers instead of the actual classes
         Animal cat = new Cat();
-        //TODO: Create Dog using interface Animal
-
-
+        // Create Dog using interface Animal
+        Animal dog = new Dog();
 
         Mammal mammal = new Mammal("Flexy");
 
-        //TODO: For mammal set animal to cat
+        // For mammal set animal to cat
         mammal.setAnimal(cat);
-        //TODO: execute for mammal animalIsSleeping()
 
-        //TODO: execute for mammal animalIsSpeaking()
+        // execute for mammal animalIsSleeping()
+        mammal.animalIsSleeping();
 
-        //TODO: For mammal set animal to dog
+        // execute for mammal animalIsSpeaking()
+        mammal.animalIsSpeaking();
 
-        //TODO: execute for mammal animalIsSleeping()
+        // For mammal set animal to dog
+        mammal.setAnimal(dog);
 
-        //TODO: execute for mammal animalIsSpeaking()
+        // execute for mammal animalIsSleeping()
+        mammal.animalIsSleeping();
+
+        // execute for mammal animalIsSpeaking()
+        mammal.animalIsSpeaking();
     }
 }
