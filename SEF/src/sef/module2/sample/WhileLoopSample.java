@@ -10,7 +10,7 @@ public class WhileLoopSample {
 		int counter = 0;
 		// while counter will be less than 10, we will print out message
 		//First of all condition will be checked
-		while(counter < 10){
+		while (counter < 10){
 			//Then implemented code in while loop will be executed
 			System.out.println("The value of counter is : " + counter);
 			// increasing counter variable value so we do not have infinity loop
@@ -26,6 +26,6 @@ public class WhileLoopSample {
 		
 			System.out.println("The value of counter is : " + counter);
 			counter++;		
-		}while(counter < 10);
+		} while(counter < 10);
 	}
 }
