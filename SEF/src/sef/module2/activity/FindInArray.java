@@ -32,6 +32,9 @@ public class FindInArray {
 		//TODO Find largest in an array
 		for (int i = 1; i < nums.length; i++) {
 			//TODO complete the code
+			if (nums[i] > result) {
+				result = nums[i];
+			}
 		}
 		System.out.println("Largest in array is "+result);
 

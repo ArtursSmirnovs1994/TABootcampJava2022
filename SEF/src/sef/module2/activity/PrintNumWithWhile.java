@@ -21,10 +21,12 @@ public class PrintNumWithWhile {
 			System.out.println(i);
 			i=i+2;			
 		}
-		
-		 
-		//TODO: write code to Print all odd numbers less than 100
-
+			//TODO: write code to Print all odd numbers less than 100
+		int a = 1;
+		while(a<100){
+			System.out.println(a);
+			a=a+2;
 	}
 
+}
 }
