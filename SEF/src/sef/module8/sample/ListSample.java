@@ -1,7 +1,9 @@
 package sef.module8.sample;
 //Needs to be completed
+import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class ListSample {
 	public static void main(String[] args) {
@@ -12,10 +14,10 @@ public class ListSample {
 	    
 	    // Add an element to the list
 	    list.add("a");
-	    
+
 	    // Insert an element at the head of the list
 	    list.add(0, "b");
-	    
+
 	    // Get the number of elements in the list
 	    int size = list.size();          // 2
 	    
@@ -34,7 +36,9 @@ public class ListSample {
 
 	    
 	    //1 - Add 3 more elements to the list - A, B and C
-	    
+		list.add("A");
+		list.add("B");
+		list.add("C");
 	    
 	    
 		//call a method which prints this list
@@ -46,7 +50,10 @@ public class ListSample {
 	{
 		//Iterator is an interface which provides a uniform way to access
 		//individual elements of a Collection
-		
+		Iterator<String> it = l.iterator();
 		//2 - Use Iterator to iterate over this list.
+		while(it.hasNext()) {
+			System.out.println(it.next() );
+		}
 			}
 }
