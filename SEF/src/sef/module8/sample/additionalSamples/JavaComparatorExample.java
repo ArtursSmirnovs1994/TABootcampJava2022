@@ -1,6 +1,6 @@
 package sef.module8.sample.additionalSamples;
 // Complete Code
-import sef.module8.sample.NameComparator;
+import sef.module8.sample.additionalSamples.NameComparator;
 
 import java.util.Arrays;
 

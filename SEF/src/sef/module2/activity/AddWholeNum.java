@@ -24,9 +24,9 @@ public class AddWholeNum {
 
 		// Addition of Whole Numbers from 50 to 100
         //TODO: complete the code. write for loop for i
-		for () {
+		for (int i = 50; i <= 100; i++) {
 			//TODO: complete the code. Write addition for variable.
-        total =
+        total = total + i;
     }
 		System.out.println("Addition of Whole Numbers from 50 to 100 = "+total);
 

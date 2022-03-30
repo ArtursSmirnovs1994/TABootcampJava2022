@@ -24,10 +24,18 @@ public class TryCatchFinallySample {
 		
 		//Lets see how do we handle this
 		//2 - put the above print statement inside a try catch block 
-		
+		try {
+			System.out.println(str.toUpperCase());
+		}
+		catch (NullPointerException e) {
+			System.out.println("Null pointer exception was caught");
+		}
+		finally {
+			System.out.println("Finally, all is good");
+		}
+
+	}
 		
 		
 		
 	}
-	
-}
