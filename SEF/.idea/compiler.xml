@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/src/sef/extra/module10" includeSubdirectories="false" />
+      <directory url="file://$PROJECT_DIR$/src/sef/extra/module11" includeSubdirectories="false" />
+      <directory url="file://$PROJECT_DIR$/src/sef/extra/module12" includeSubdirectories="false" />
+      <directory url="file://$PROJECT_DIR$/src/sef/extra/module13" includeSubdirectories="false" />
+      <directory url="file://$PROJECT_DIR$/src/sef/extra/module14" includeSubdirectories="false" />
+      <directory url="file://$PROJECT_DIR$/src/sef/extra" includeSubdirectories="true" />
+      <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/AgeComparator.java" />
+      <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/Employee.java" />
+      <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/JavaComparatorExample.java" />
+      <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/NameComparator.java" />
+      <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/QueueSample.java" />
+    </excludeFromCompile>
+  </component>
+</project>
