@@ -27,8 +27,8 @@ public class PersonTest extends TestCase {
 
     //TODO: create unit tests for getters and setters
     public void testGetterTest() {
-        assertEquals("GetterTest height", person.getHeight(),testHeight);
-        assertEquals(person.getWeight(),testWeight);
+        assertEquals(testHeight, person.getHeight());
+        assertEquals(testWeight, person.getWeight());
     }
 
     public void testSetterTest() {
