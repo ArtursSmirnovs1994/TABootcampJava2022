@@ -26,7 +26,7 @@ public class MyCalculatorTest extends TestCase {
 
 		a = -5;		
 		b = 10;		
-		//	Checks the sum of a postive value and a negative value
+		//	Checks the sum of a positive value and a negative value
 		assertEquals(5, (theCalculator.getSum(a,b)));
 		assertEquals(5, (theCalculator.getSum(b,a)));
 		

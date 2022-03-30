@@ -15,12 +15,6 @@
       <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/JavaComparatorExample.java" />
       <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/NameComparator.java" />
       <file url="file://$PROJECT_DIR$/src/sef/module8/sample/additionalSamples/QueueSample.java" />
-      <file url="file://$PROJECT_DIR$/src/sef/module9/activity/Person.java" />
-      <file url="file://$PROJECT_DIR$/src/sef/module9/activity/PersonTest.java" />
-      <file url="file://$PROJECT_DIR$/src/sef/module9/sample/MyCalculator.java" />
-      <file url="file://$PROJECT_DIR$/src/sef/module9/sample/MyCalculatorTest.java" />
-      <file url="file://$PROJECT_DIR$/src/sef/module9/sample/Product.java" />
-      <file url="file://$PROJECT_DIR$/src/sef/module9/sample/ProductTests.java" />
     </excludeFromCompile>
   </component>
 </project>
