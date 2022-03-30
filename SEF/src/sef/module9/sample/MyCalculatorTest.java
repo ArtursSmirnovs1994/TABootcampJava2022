@@ -1,24 +1,24 @@
 package sef.module9.sample;
 // Complete Code
-import junit.framework.TestCase;
+import junit.framework.TestCase; //our test class
 
-public class MyCalculatorTest extends TestCase {
+public class MyCalculatorTest extends TestCase { //!!differs from other classes with this, name should end with "TEST"
 
-	private MyCalculator theCalculator;
+	private MyCalculator theCalculator; //!!attribute mycalculator
 
 	protected void setUp() throws Exception {
-		super.setUp();
+		super.setUp(); //!!test environment initialisation
 		//	Initialize variables to be used here
-		theCalculator = new MyCalculator();
-	}
+		theCalculator = new MyCalculator(); //we will be using object calculator
+	}//method to setup environment
 
 	protected void tearDown() throws Exception {
 		super.tearDown();
-	}
+	}//method to turn off environment
 
-	public void testGetSum() {
+	public void testGetSum() { //need to start name with test, otherwise GUNIT will recognize this as method
 		
-		int a = 5;
+		int a = 5; //!!declared 2 objects
 		int b = 10;			
 		//	Checks the sum of two (2) positive values
 		assertEquals(15, (theCalculator.getSum(a,b)));
@@ -26,7 +26,7 @@ public class MyCalculatorTest extends TestCase {
 
 		a = -5;		
 		b = 10;		
-		//	Checks the sum of a postive value and a negative value
+		//	Checks the sum of a positive value and a negative value
 		assertEquals(5, (theCalculator.getSum(a,b)));
 		assertEquals(5, (theCalculator.getSum(b,a)));
 		
@@ -86,7 +86,7 @@ public class MyCalculatorTest extends TestCase {
 
 		double a = 10;	double b = 5;		
 		//	Checks if b is lesser than a
-		assertEquals(2, (theCalculator.getQuotient(a,b)),0);		
+		assertEquals(2, (theCalculator.getQuotient(a,b)),0); //delta is acceptable margin of error
 		//	Checks if b is greater than a
 		assertEquals(0.5, (theCalculator.getQuotient(b,a)),0);
 
