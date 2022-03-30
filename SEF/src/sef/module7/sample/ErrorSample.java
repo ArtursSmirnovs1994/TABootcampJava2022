@@ -3,18 +3,19 @@ package sef.module7.sample;
 public class ErrorSample {
 	
 	//This is an example of an error which cannot be handled programmatically 
-	public static void main(String arg[]){
+	public static void main(String arg[]) throws InterruptedException {
 		infinity();
 	}
 	
 	//Below method calls itself and
 	//it happens infinite times because there is no exit condition
 	//At one point in time, JVM would give up and show StackOverflowError
-	public static void infinity(){
+	public static void infinity() throws InterruptedException {
 		//1 - Print a message
-	
+		System.out.println("....and beyond!");
 		
 		//2 - Call infinity()
-	
+		infinity();
+		Thread.sleep(2000);
 	}
 }
