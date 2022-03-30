@@ -6,16 +6,19 @@ import sef.module5.sample.polymorphism.Student_P;
 public class ReferenceCastingSample {
 
 	public static void main(String arg[]){
-		
-		Student_P s = new Student_P();
-		s.setName("Jane Doe");
-		s.setSchool("A Fictional School");
-		s.setGrade(10);
-		
+
+		Student_P student = new Student_P();
+		student.setName("Jane Doe");
+		student.setSchool("A Fictional School");
+		student.setGrade(10);
+		student.setAge(21);
+
 		// Sample reference casting
-		Person_P tempPerson = s; // convert student to person
-		tempPerson.announce();
-		Student_P tempStudent = (Student_P)tempPerson; // convert person to student
+		Person_P tempPerson = new Student_P();
+		tempPerson.setAge(28); // convert student to person
+		System.out.println(("Converted person attributes \n name":" + tempPerson.getName() + \nage");
+		Student_P tempStudent = (Student_P) tempPerson; // convert person to student
+		System.out.println("***********");
 		tempStudent.announce();
 	}
 }

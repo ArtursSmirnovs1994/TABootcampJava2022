@@ -10,11 +10,10 @@ public class ExceptionSequenceActivity {
     void divide(int num1, int num2) {
         try {
             System.out.println(num1 / num2);
-        } catch (Exception e) {
-            System.out.println("Exception!!!");
         } catch (ArithmeticException a) {
-            System.out.println("Division by zero is not allowed");
+            System.out.println("Division by zero is not allowed!!!");
+        } catch (Exception a) {
+            System.out.println("Exception!");
         }
-
     }
 }

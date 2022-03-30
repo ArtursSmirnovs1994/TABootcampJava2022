@@ -14,7 +14,6 @@ public class NumToWords {
      */
     public static void main(String[] args) {
 
-
         int i = 8;
         String numText = "";
 
@@ -39,11 +38,18 @@ public class NumToWords {
             default:
                 numText = "NUMBER " + i;
         }
-
         System.out.println(numText);
 
-
+        String number = "ONE";
+        switch (number){
+            case "ONE":
+                System.out.println("The number is one");
+                break;
+            case "TWO":
+                    System.out.println("The number is two");
+                break;
+            default:
+                System.out.println("I didn't know this number :");
+        }
     }
-
-
 }

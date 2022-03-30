@@ -30,8 +30,6 @@ public class StaticSample1 {
 		System.out.println(temp1.notShared);
 		System.out.println(temp2.SHARED);  // Static attributes and methods are associated to the class and are shared by all instances of the class
 		System.out.println(temp2.notShared);
-		
-		
 				
 	}
 }

@@ -14,9 +14,9 @@ public class StrategySample {
 		
 		//Instead of creating subclasses of 'General' with different strategies
 		//We instead assign different 'strategies' to the General
-		g.setStragey(s1);
+		g.setStrategy(s1);
 		g.executeStrategy();
-		g.setStragey(s2);
+		g.setStrategy(s2);
 		g.executeStrategy();
 		
 	}

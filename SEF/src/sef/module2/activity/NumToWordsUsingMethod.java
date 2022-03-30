@@ -14,11 +14,13 @@ public class NumToWordsUsingMethod {
 		 */
 		public static void main(String[] args) {
 			//TODO complete the code to print text value of 8, 9 and 10
-			printMyWord();
-
+			printMyWord(8);
+			printMyWord(9);
+			printMyWord(10);
+			printMyWord("String", 5, 2.5F);
 		}
 
-		private static void printMyWord(int i) {
+	private static void printMyWord(int i) {
 			final String numText;
 			switch(i) {
 			case 1:
@@ -45,10 +47,19 @@ public class NumToWordsUsingMethod {
 				numText = "NUMBER " + i;
 			}
 			System.out.println(numText);
-			
 		}
 
-
-		
-
+		private static void printMyWord(String myString, int myInteger, float myFloat) {
+			final String numText;
+			switch (myString.toLowerCase()) {
+				case "one":
+					numText = "ONE";break;
+				case "two":
+					numText = "TWO";break;
+				default:
+					numText = "NUMBER " + i;
+			}
+			System.out.println(numText);
 	}
+}
+

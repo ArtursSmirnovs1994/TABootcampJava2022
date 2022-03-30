@@ -7,14 +7,16 @@ public class VirtualMethodSample {
 	public static void main(String arg[]){
 		Person_P p = new Person_P();
 		p.setName("John Doe");
-		
+		p.setAge(99999);
+		System.out.println("Persons age " + p.getAge());
+
 		//Student inherits the methods and behavior from the Person class
 		Student_P s = new Student_P();
 		s.setName("Jane Doe");
-	
+
 		s.setSchool("A Fictional School");
 		s.setGrade(10);
-	
+
 		rollCall(p);
 		rollCall(s);
 	}

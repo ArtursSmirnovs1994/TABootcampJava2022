@@ -4,22 +4,25 @@ public class PersonSampleTwo {
 
 	private String name;
 	private int age;
-	
-	public PersonSampleTwo(String name, int age){
+
+	public PersonSampleTwo(String name, int age) {
 		setName(name);
 		setAge(age);
 	}
-	
-	public  String getName(String name){
+
+	public String getName(String name) {
 		return name;
 	}
-	
-	public int getAge(){
+
+	public String getName() {
+	}
+
+	public int getAge() {
 		return age;
 	}
-	
-	public final void setAge(int age){
-		if(age < 0){
+
+	public final void setAge(int age) {
+		if (age < 0) {
 			throw new IllegalArgumentException("Age cannot be negative!");
 		}
 		this.age = age;
@@ -31,4 +34,6 @@ public class PersonSampleTwo {
 		}
 		this.name = name;
 	}
+
+
 }

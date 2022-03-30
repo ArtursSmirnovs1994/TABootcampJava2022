@@ -1,7 +1,9 @@
 package sef.module8.sample;
 //Needs to be completed
-import java.util.List;
+
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class ListSample {
 	public static void main(String[] args) {
@@ -24,29 +26,40 @@ public class ListSample {
 	    
 	    // Retrieving the element at the head of the list
 	    element = list.get(0);                      // b
-	    
-	    // Remove the first occurrence of an element
-	    boolean b = list.remove("b");      // true
-	    b = list.remove("b");              // false
-	    
-	    // Remove the element at a particular index
-	    element = list.remove(0);          // a
 
-	    
-	    //1 - Add 3 more elements to the list - A, B and C
-	    
-	    
-	    
+		// Remove the first occurrence of an element
+		boolean b = list.remove("b");      // true
+		b = list.remove("b");              // false
+
+		// Remove the element at a particular index
+		element = list.remove(0);          // a
+
+
+		//1 - Add 3 more elements to the list - A, B and C
+		list.add("A");
+		list.add("B");
+		list.add("C");
+
 		//call a method which prints this list
-	    ListSample obj=new ListSample();
-	    obj.print(list);
+		ListSample obj = new ListSample();
+		obj.print(list);
 	}
 
-	void print(List l)
-	{
+	void print(List list) {
 		//Iterator is an interface which provides a uniform way to access
 		//individual elements of a Collection
-		
+
 		//2 - Use Iterator to iterate over this list.
-			}
+		Iterator<String> nameOfIterator = list.iterator();
+		System.out.println("*** Work of Iterator***");
+		while (nameOfIterator.hasNext()) {
+			System.out.println(nameOfIterator.hasNext());
+		}
+
+		System.out.println("*** Work of Iterator***");
+		for (Object nameOfObject : list) {
+			System.out.println(nameOfObject.toString());
+
+		}
+	}
 }

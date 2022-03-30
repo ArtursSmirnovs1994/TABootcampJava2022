@@ -18,7 +18,8 @@ public class WhileLoopSample {
 		}
 		
 		System.out.println("\n\nDo-While Loop");
-		counter = 0;
+		counter = 1;
+
 		// Do-While loop starts with keyword do, and in this case
 		// first thing will be that code does the actions like printing out line
 		// and then only checks for while condition
@@ -29,3 +30,4 @@ public class WhileLoopSample {
 		}while(counter < 10);
 	}
 }
+

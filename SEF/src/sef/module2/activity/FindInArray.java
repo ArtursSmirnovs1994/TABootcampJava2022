@@ -34,8 +34,5 @@ public class FindInArray {
 			//TODO complete the code
 		}
 		System.out.println("Largest in array is "+result);
-
-
 	}
-
 }
