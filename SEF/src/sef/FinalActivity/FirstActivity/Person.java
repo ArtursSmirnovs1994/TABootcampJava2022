@@ -27,8 +27,8 @@ public class Person {
         if (trimmed.length() == 0) {throw new InvalidNameException("Name cannot be blank"); }
 //        if (trimmed.length() < 2) {throw new InvalidNameException("Name is too short"); }
         if (
-                nameHasNumbers(input)
-                        || trimmed.matches("\\d")
+            nameHasNumbers(input)
+//            trimmed.matches("\\d")
         ) { throw new InvalidNameException("Name cannot contain numbers");  }
         return trimmed;
     }
