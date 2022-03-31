@@ -14,6 +14,7 @@ public class FibTest {
         Assert.assertEquals((Long)13L, calculateFibonacci(7L) );
         Assert.assertEquals((Long)12586269025L, calculateFibonacci(50L) );
         Assert.assertEquals((Long)2880067194370816120L, calculateFibonacci(90L) );
+        Assert.assertEquals((Long)0L, calculateFibonacci(-9L) );
     }
 
 }

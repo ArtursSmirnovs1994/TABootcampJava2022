@@ -11,19 +11,21 @@ public class Fib {
         return calculateFibonacci(numberN, null);
     }
 
-    /* Calculates the Fibonacci sequence using dynamic programming paradigm */
-    public static Long calculateFibonacci(Long numberN, @Nullable Map<Long, Long> storedResults) {
+    /* Calculates the Fibonacci sequence using dynamic programming paradigm
+    * Returns 0 for negative numbers*/
+    private static Long calculateFibonacci(Long numberN, @Nullable Map<Long, Long> storedResults) {
+        if (numberN == 0) {
+            return 0L;
+        }
+        if (numberN < 0) {return 0L; }
+        if (numberN <= 2) {
+            return 1L;
+        }
         if (storedResults == null) {
             storedResults = new HashMap<>();
         }
         if (storedResults.containsKey(numberN)) {
             return storedResults.get(numberN);
-        }
-        if (numberN == 0) {
-            return 0L;
-        }
-        if (numberN <= 2) {
-            return 1L;
         }
         Long result = (calculateFibonacci(numberN - 1, storedResults) + calculateFibonacci(numberN - 2, storedResults));
         storedResults.put(numberN, result);
@@ -34,15 +36,11 @@ public class Fib {
     enum ValidationResult {USER_EXIT, MAX_EXCEEDED, NEGATIVE_NUMBER, NOT_A_NUMBER, EMPTY, OK}
     public void calculateByUserInput() {
         Scanner c = new Scanner(System.in);
-        if (c == null) {
-            System.err.println("Console unavailable.");
-            return;
-        }
 
         boolean isExit = false;
         do {
             System.out.printf("Enter N up to %d or Q to exit%n> ", MAX_INPUT);
-            String input = c.nextLine();
+            String input = c.nextLine().trim();
             switch (validateInput(input)) {
                 case OK -> {
                     Long result = calculateFibonacci( Long.valueOf(input) );
@@ -52,15 +50,15 @@ public class Fib {
                 case MAX_EXCEEDED -> {System.out.println("Maximum N exceeded");}
                 case NEGATIVE_NUMBER -> { System.out.println("Negative N is not allowed"); }
                 case EMPTY -> { }
-                case NOT_A_NUMBER -> { System.out.println("Input was not a number"); }
+                case NOT_A_NUMBER -> { System.out.println("Input was not an integer"); }
                 default -> { }
             }
         } while (!isExit);
+        c.close();
     }
 
 
     private ValidationResult validateInput(String input) {
-        input = input.trim();
         if (input.length() == 0) {return ValidationResult.EMPTY;}
         if (input.equals("Q") || input.equals("q")) { return ValidationResult.USER_EXIT; }
         try {
