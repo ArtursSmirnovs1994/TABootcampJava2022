@@ -22,7 +22,7 @@ public class MyCalculatorTest extends TestCase {
 		int b = 10;			
 		//	Checks the sum of two (2) positive values
 		assertEquals(15, (theCalculator.getSum(a,b)));
-		assertEquals(15, (theCalculator.getSum(b,a)));		
+		assertEquals(15, (theCalculator.getSum(b,a)));
 
 		a = -5;		
 		b = 10;		
