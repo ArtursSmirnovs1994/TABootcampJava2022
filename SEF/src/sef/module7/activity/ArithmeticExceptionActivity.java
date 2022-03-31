@@ -1,7 +1,7 @@
 package sef.module7.activity;
 
 // Needs to be completed
-public class ArithmeticExceptionActivity {
+public class ArithmeticExceptionActivity extends Throwable {
     //TODO: 1 - Type main method
     public static void main(String[] args) {
 
