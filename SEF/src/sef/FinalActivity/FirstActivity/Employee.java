@@ -66,7 +66,7 @@ public class Employee extends Person {
         public int compare(Object emp1, Object emp2) {
             int salary1 = ((Employee) emp1).getSalary();
             int salary2 = ((Employee) emp2).getSalary();
-            return salary1 - salary2;
+            return salary2 - salary1;
         }
     }
 }
