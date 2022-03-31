@@ -24,11 +24,12 @@ public class AddWholeNum {
 
 		// Addition of Whole Numbers from 50 to 100
         //TODO: complete the code. write for loop for i
-		for () {
+        int sum=0;
+		for (int j=50;j<=100;j++) {
+            sum = sum +j ;
 			//TODO: complete the code. Write addition for variable.
-        total =
     }
-		System.out.println("Addition of Whole Numbers from 50 to 100 = "+total);
+		System.out.println("Addition of Whole Numbers from 50 to 100 = "+sum);
 
 
 }

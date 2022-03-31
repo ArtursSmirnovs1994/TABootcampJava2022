@@ -11,8 +11,8 @@ public class Calculator {
 
 	public static void main(String[] args) {
 
-	int x = 10;
-	int y = 5;
+	int x = 0;
+	int y = 10;
 
 	int[] nums = {1, 2, 3, 4};
 
@@ -31,6 +31,7 @@ public class Calculator {
 
 	private static int subtract(int x, int y) {
         //TODO implement subtraction
+		int diff = x - y;
 
 		return diff;
 	}
@@ -48,14 +49,15 @@ public class Calculator {
 	private static int divide(int x, int y) {
 		int divValue = 0;
 		if (x == 0 && y == 0) {
+			System.out.println("Dividing 0 with 0 is not possible");
 			//TODO complete the code so message is printed that dividing 0 with 0 is not possible
 
 		} else if (y == 0) {
 		    //TODO complete the code so message is printed that division by 0 is not possible
-
+			System.out.println("Division by 0 is not possible");
 		} else {
 		    //TODO complete the code so that division is done
-
+			divValue =x/y;
         }
 		return divValue;
 

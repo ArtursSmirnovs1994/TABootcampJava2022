@@ -5,7 +5,9 @@ public class CustomException extends Exception{
 
 	//1 - Override the toString method of Exception.
 	//This message gets printed as soon as CustomException is thrown.
-	
+	public String toString(){
+		return "Custom exception is thrown !!"
+	}
 
 	//You can also write more information about this exception in getMessage()
 	//2 - Override getMessage()
