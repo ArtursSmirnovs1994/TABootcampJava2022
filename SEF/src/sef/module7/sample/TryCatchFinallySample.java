@@ -29,7 +29,8 @@ public class TryCatchFinallySample {
 		}
 
 
-		//You should program in a way that such issues are captured. Follow the instructions given by your trainer to complete this code with try, catch, finally blocks
+		//You should program in a way that such issues are captured. Follow the instructions given by your trainer to complete this code with try,
+		// catch, finally blocks
 
 		//Lets see how do we handle this
 		//2 - put the above print statement inside a try catch block 
