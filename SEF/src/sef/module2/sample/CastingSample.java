@@ -1,13 +1,13 @@
  package sef.module2.sample;
 
-public class CastingSample {
+		public class CastingSample {
 
-	public static void main(String arg[]){
-		
-		int intVar=1;
-		char charVar='A';
-		long longVar=99;
-		float floatVar=1.2f;
+			public static void main(String arg[]){
+
+				int intVar=1;
+				char charVar='A';
+				long longVar=99;
+				float floatVar=1.2f;
 	
 		
 		//Implicit Casting;

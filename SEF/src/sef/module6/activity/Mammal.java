@@ -1,11 +1,14 @@
 package sef.module6.activity;
 
 public class Mammal {
-
+//variable
     private Animal myAnimal;
     private String name;
 
     //TODO create constructor for Mammal with parameter name
+    Mammal(String n){
+        this.name=n;
+    }
 
 
     public void setAnimal(Animal animal) {
@@ -15,12 +18,13 @@ public class Mammal {
     public void animalIsSleeping() {
         System.out.println("Animal with name: " + name+ " is ...");
         //TODO: write code so that Animal sleep implementation is used
+        myAnimal.sleep();
 
     }
 
     public void animalIsSpeaking() {
         System.out.println("Animal with name: " + name+ " is ...");
        //TODO: write code so that Animal animalSound implementation is used
-
+        myAnimal.animalSound();
     }
 }
