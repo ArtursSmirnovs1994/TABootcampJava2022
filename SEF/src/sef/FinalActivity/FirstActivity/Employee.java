@@ -62,11 +62,35 @@ public class Employee extends Person {
         return newSalary;
     }
 
+    public String getFirstName() {
+        return getName().substring(0, getName().indexOf(' '));
+    }
+
+    public String getSecondName() {
+        return getName().substring(getName().indexOf(' '));
+    }
+
     public static class salaryComparator implements Comparator {
         public int compare(Object emp1, Object emp2) {
             int salary1 = ((Employee) emp1).getSalary();
             int salary2 = ((Employee) emp2).getSalary();
             return salary2 - salary1;
+        }
+    }
+
+    public static class firstNameComparator implements Comparator {
+        public int compare(Object emp1, Object emp2) {
+            String firstName1 = ((Employee)emp1).getFirstName();
+            String firstName2 = ((Employee)emp2).getFirstName();
+            return firstName1.compareTo(firstName2);
+        }
+    }
+
+    public static class secondNameComparator implements Comparator {
+        public int compare(Object emp1, Object emp2) {
+            String secondName1 = ((Employee)emp1).getSecondName();
+            String secondName2 = ((Employee)emp2).getSecondName();
+            return secondName1.compareTo(secondName2);
         }
     }
 }

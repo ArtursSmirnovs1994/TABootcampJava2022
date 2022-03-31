@@ -1,8 +1,6 @@
 package sef.FinalActivity.FirstActivity;
 
 import junit.framework.TestCase;
-import org.junit.Before;
-import org.junit.Test;
 
 import java.util.Arrays;
 
@@ -15,7 +13,6 @@ public class EmployeeTest extends TestCase {
             new Employee("Dylan Payne", 46, "DevOps specialist", "Accenture"),
             new Employee("Isabelle Guerrero", 37, "Test Lead", "Accenture")
     };
-
 
     @Override
     protected void setUp() throws Exception {
