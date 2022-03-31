@@ -26,11 +26,14 @@ public class CalculatorClient {
 		// Multiply 
 		int[] mul = {2, 3, 4};
 		//TODO Complete the code: result should be equal to the normalCalc multiply function and int array mul should be multiplied.
-
+		int resultMult = normalCalc.multiply(mul);
 		System.out.println("2) Multiplication result is " + result); 
 		
 
 		//Division
+		int resultDiv = normalCalc.divide(10, 2);
+		System.out.println("3) Division result is " + resultDiv);
+
 		//TODO Write code which will use normalCalc and divide function
 		//TODO Divide numbers should be 10 and 2
 		//TODO Divide result should be printed in similar style as multiply and addition
@@ -38,6 +41,8 @@ public class CalculatorClient {
 
 
 		//Subtraction
+		int resultSub = normalCalc.subtract(10, 2);
+		System.out.println("4) Substraction result is " + resultSub);
 		//TODO Write code which will use normalCalc and subtract function
 		//TODO Subtract numbers should be 10 and 2
 		//TODO Subtract result should be printed in similar style as multiply and addition
@@ -47,3 +52,4 @@ public class CalculatorClient {
 	
 
 }
+

@@ -5,18 +5,18 @@ import sef.module5.sample.polymorphism.Student_P;
 
 public class VirtualMethodSample {
 	public static void main(String arg[]){
-		Person_P p = new Person_P();
-		p.setName("John Doe");
+		Person_P person = new Person_P();
+		person.setName("John Doe");
 		
 		//Student inherits the methods and behavior from the Person class
-		Student_P s = new Student_P();
-		s.setName("Jane Doe");
+		Student_P student = new Student_P();
+		student.setName("Jane Doe");
 	
-		s.setSchool("A Fictional School");
-		s.setGrade(10);
+		student.setSchool("A Fictional School");
+		student.setGrade(10);
 	
-		rollCall(p);
-		rollCall(s);
+		rollCall(person);
+		rollCall(student);
 	}
 	
 	public static void rollCall(Person_P temp){

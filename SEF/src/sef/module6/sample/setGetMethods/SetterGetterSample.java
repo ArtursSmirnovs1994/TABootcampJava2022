@@ -14,5 +14,8 @@ public class SetterGetterSample{
 		
 		//Will not allow improper fields to be set by throwing an exception because of setter method
 		PersonSampleTwo p2 = new PersonSampleTwo("John Doe", -10);
+		System.out.println("Person 1 attributes\n" + "name: " + p1.name + "\nage: " + p1.age );
+		System.out.println("Person 2 attributes\n" + "name: " + p2.getName() + "\nage: " + p2.getAge );
+
 	}
 }

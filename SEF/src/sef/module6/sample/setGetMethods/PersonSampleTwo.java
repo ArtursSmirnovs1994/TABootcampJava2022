@@ -2,6 +2,7 @@ package sef.module6.sample.setGetMethods;
 
 public class PersonSampleTwo {
 
+	public String getAge;
 	private String name;
 	private int age;
 	
@@ -9,9 +10,10 @@ public class PersonSampleTwo {
 		setName(name);
 		setAge(age);
 	}
-	
-	public  String getName(String name){
-		return name;
+
+	//key word
+	public  String getName(){
+			return name;
 	}
 	
 	public int getAge(){

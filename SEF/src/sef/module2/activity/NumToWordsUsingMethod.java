@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package sef.module2.activity;
 
 /**
- * @author 
+ * @author
  *
  */
 public class NumToWordsUsingMethod {
@@ -14,7 +14,10 @@ public class NumToWordsUsingMethod {
 		 */
 		public static void main(String[] args) {
 			//TODO complete the code to print text value of 8, 9 and 10
-			printMyWord();
+			printMyWord( 8);
+			printMyWord(9);
+			printMyWord( 10);
+
 
 		}
 
@@ -45,10 +48,10 @@ public class NumToWordsUsingMethod {
 				numText = "NUMBER " + i;
 			}
 			System.out.println(numText);
-			
+
 		}
 
 
-		
+
 
 	}

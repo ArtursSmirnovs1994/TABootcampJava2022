@@ -1,7 +1,7 @@
 package sef.module9.sample;
 
 // Complete Code
-class MyCalculator {
+public class MyCalculator {
 
     public int getSum(int a, int b) {
 
