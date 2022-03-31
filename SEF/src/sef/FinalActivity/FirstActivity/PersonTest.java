@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class PersonTest {
+public class PersonTest extends TestCase{
     Person testPerson;
     int testAge = 22;
     String testName = " Abigail Pittman ";
