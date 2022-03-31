@@ -1,7 +1,5 @@
 package sef.module8.sample.additionalSamples;
  // Complete Code
-import sef.module8.sample.Employee;
-
 import java.util.*;
  
 class AgeComparator implements Comparator{

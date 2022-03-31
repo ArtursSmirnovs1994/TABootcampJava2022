@@ -12,9 +12,9 @@ public class ErrorSample {
 	//At one point in time, JVM would give up and show StackOverflowError
 	public static void infinity(){
 		//1 - Print a message
-	
+		//System.out.println("message");
 		
 		//2 - Call infinity()
-	
+		//infinity();
 	}
 }

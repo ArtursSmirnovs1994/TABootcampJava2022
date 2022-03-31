@@ -13,16 +13,22 @@ public class TryCatchFinallyActivity {
         int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
        //TODO: use try
-        for (int i = 0; i <= 10; i++) {
-            System.out.println(arr[i]);
+        try {
+            for (int i = 0; i <= 10; i++) {
+                System.out.println(arr[i]);
+            }
         }
         //TODO: create catch for try and use IndexOutOfBoundsException
-
         //TODO: In catch create custom System.out.println message
-
-
+        catch(IndexOutOfBoundsException indexOutOfBoundsException){
+            System.out.println("Index out of bounds!");
+        }
         //TODO: Use method that this message gets printed out whether or not error has occurred
-        System.out.println("This should get printed even if there is an exception");
+        finally{
+            System.out.println("This should get printed even if there is an exception");
+        }
+
+
 
     }
 

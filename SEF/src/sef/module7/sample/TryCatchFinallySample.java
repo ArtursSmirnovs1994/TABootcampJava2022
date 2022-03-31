@@ -24,7 +24,16 @@ public class TryCatchFinallySample {
 		
 		//Lets see how do we handle this
 		//2 - put the above print statement inside a try catch block 
-		
+		try {
+			System.out.println(str.toUpperCase());
+		}
+		catch(NullPointerException nullPointerException) {
+			System.out.println("String is null");
+		}
+		finally {
+			str = "String Final value";
+			System.out.println(str);
+		}
 		
 		
 		

@@ -13,7 +13,7 @@ public class ClassInstanceSample {
 		System.out.println(her.introduce());
 		
 		// Access and Set the object's attribute using it's setter and getter
-		him.setName("John");
+		him.setName("Arturs");
 		String name = him.getName();
 		System.out.println(name);
 		
