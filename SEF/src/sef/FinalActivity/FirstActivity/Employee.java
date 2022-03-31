@@ -70,26 +70,26 @@ public class Employee extends Person {
         return getName().substring(getName().indexOf(' '));
     }
 
-    public static class salaryComparator implements Comparator {
-        public int compare(Object emp1, Object emp2) {
-            int salary1 = ((Employee) emp1).getSalary();
-            int salary2 = ((Employee) emp2).getSalary();
+    public static class salaryComparator implements Comparator<Employee> {
+        public int compare(Employee emp1, Employee emp2) {
+            int salary1 = emp1.getSalary();
+            int salary2 = emp2.getSalary();
             return salary2 - salary1;
         }
     }
 
-    public static class firstNameComparator implements Comparator {
-        public int compare(Object emp1, Object emp2) {
-            String firstName1 = ((Employee)emp1).getFirstName();
-            String firstName2 = ((Employee)emp2).getFirstName();
+    public static class firstNameComparator implements Comparator<Employee> {
+        public int compare(Employee emp1, Employee emp2) {
+            String firstName1 = emp1.getFirstName();
+            String firstName2 = emp2.getFirstName();
             return firstName1.compareTo(firstName2);
         }
     }
 
-    public static class secondNameComparator implements Comparator {
-        public int compare(Object emp1, Object emp2) {
-            String secondName1 = ((Employee)emp1).getSecondName();
-            String secondName2 = ((Employee)emp2).getSecondName();
+    public static class secondNameComparator implements Comparator<Employee> {
+        public int compare(Employee emp1, Employee emp2) {
+            String secondName1 = emp1.getSecondName();
+            String secondName2 = emp2.getSecondName();
             return secondName1.compareTo(secondName2);
         }
     }
