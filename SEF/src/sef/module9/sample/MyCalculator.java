@@ -3,10 +3,7 @@ package sef.module9.sample;
 // Complete Code
 class MyCalculator {
 
-    public int getSum(int a, int b) {
-
-        return a + b;
-    }
+    public int getSum(int a, int b) {return a + b;}
 
     public int getDifference(int a, int b) {
         return a - b;

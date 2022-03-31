@@ -23,9 +23,9 @@ public class OperatorActivity {
 		
 		// Add numbers
 		
-		
+		result = +6;
 		// Print result
-		
+		System.out.println("yes" + result);
 		
 	}
 

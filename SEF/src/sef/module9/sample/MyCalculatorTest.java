@@ -14,12 +14,13 @@ public class MyCalculatorTest extends TestCase {
 
 	protected void tearDown() throws Exception {
 		super.tearDown();
+
 	}
 
 	public void testGetSum() {
 		
-		int a = 5;
-		int b = 10;			
+		int a = 8;
+		int b = 7;
 		//	Checks the sum of two (2) positive values
 		assertEquals(15, (theCalculator.getSum(a,b)));
 		assertEquals(15, (theCalculator.getSum(b,a)));		

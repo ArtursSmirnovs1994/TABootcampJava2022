@@ -13,9 +13,10 @@ public class ClassInstanceSample {
 		System.out.println(her.introduce());
 		
 		// Access and Set the object's attribute using it's setter and getter
-		him.setName("John");
+		him.setName("Slim Shady");
 		String name = him.getName();
 		System.out.println(name);
+		System.out.println(him.introduce());
 		
 		//This will cause the object pointed by 'her' to be garbage collected
 		//since there are no more remaining references to that object

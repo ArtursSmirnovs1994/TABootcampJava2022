@@ -8,7 +8,7 @@ package sef.module2.sample;
 import java.lang.*;
 
 /**
-* @author John Doe
+* @author My ass
 */
 public class MainSample {
 
