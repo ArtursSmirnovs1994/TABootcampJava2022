@@ -1,10 +1,6 @@
 package sef.module8.activity;
-//Needs to be completed
-
-import java.util.Iterator;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.Set;
 
 
 public class MapActivity {
@@ -23,23 +19,13 @@ public class MapActivity {
 			myMapsName.put(5, "Five");
 			myMapsName.put(4, "Four");
 
-			//2 - Call print method to print the map passed as its parameter.
-			MapActivity obj = new MapActivity();
-			obj.print(myMapsName);
+			print(myMapsName);
 		}
-		
-		void print(Map map)
-		{
-			//3 - Type code to print this map
-			Set entrySet = map.entrySet();
-			Iterator it = entrySet.iterator();
-			while (Iterator.hasNext()){
-				Map.Entry<String, String> entry = itr.next();
-				System.out.println("Key = " + entry.getKey() +
-						", Value = " + entry.getValue());
-				Integer key = (Integer) it.next();
-				System.out.println(key + "");
-			}
-		
+
+	static void print(Map<Integer, String> map) {
+
+		for (Integer id : map.keySet()) {
+			System.out.printf("key: %s, value: %s\n", id, map.get(id));
 		}
+	}
 	}
