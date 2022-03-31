@@ -40,7 +40,6 @@ public class PersonTest extends TestCase {
     }
 
 
-    //TODO: create unit test for getBodyMassIndex method
     public void testCalculateBMI() {
         assertEquals("22.222223", (person.calculateBMI(testWeight, testHeight)));
     }
