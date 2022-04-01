@@ -9,7 +9,7 @@ public class MultiDimensionalArraySample {
 		// Declaring a String array with 3 dimensions
 		String[][][] myStringCube;
 
-		// Initializing/assigning myIntegerGrid with a size of 5 by 5,
+		// Initializing myIntegerGrid with a size of 5 by 5,
 		// which is a total of 25 values/members
 		myIntegerGrid = new int[5][5];
 		// Initializing/assigning myStringCube with a size of 3 by 3 by 3,
@@ -17,7 +17,7 @@ public class MultiDimensionalArraySample {
 		myStringCube = new String[3][3][3];
 
 		// Another way of declaring multi-dimensional arrays
-		// Declaring and Constructing an array
+		// Declaring and Constructing an array  (declare+initialize)
 		int[][] aNewIntegerGrid = new int[5][5];
 		String[][][] aNewStringCube = new String[3][3][3];
 

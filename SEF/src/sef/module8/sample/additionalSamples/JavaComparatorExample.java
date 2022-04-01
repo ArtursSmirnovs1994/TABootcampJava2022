@@ -1,6 +1,6 @@
 package sef.module8.sample.additionalSamples;
 // Complete Code
-import sef.module8.sample.NameComparator;
+//import sef.module8.sample.NameComparator;
 
 import java.util.Arrays;
 
@@ -52,13 +52,13 @@ public class JavaComparatorExample{
             System.out.println( "Employee " + (i+1) + " name :: " + employee[i].getName() + ", Age :: " + employee[i].getAge());
         }
        
-        //Sorting array on the basis of employee Name by passing NameComparator
-        Arrays.sort(employee, new NameComparator());
-       
-        System.out.println("\n\nOrder of employee after sorting by employee name is");    
-        for(int i=0; i < employee.length; i++){
-            System.out.println( "Employee " + (i+1) + " name :: " + employee[i].getName() + ", Age :: " + employee[i].getAge());
-        }
+//        //Sorting array on the basis of employee Name by passing NameComparator
+//        Arrays.sort(employee, new NameComparator());
+//
+//        System.out.println("\n\nOrder of employee after sorting by employee name is");
+//        for(int i=0; i < employee.length; i++){
+//            System.out.println( "Employee " + (i+1) + " name :: " + employee[i].getName() + ", Age :: " + employee[i].getAge());
+//        }
     
     }
  

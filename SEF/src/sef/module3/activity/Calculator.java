@@ -18,16 +18,19 @@ public class Calculator {
 	
 	// Parameterized constructor
 	public Calculator(String calculatorType) {
+
 		this.calculatorType = calculatorType;
 	}
 
 	// Getter for CalculatorType
 	public String getCalculatorType() {
+
 		return calculatorType;
 	}
 
 	// Setter for CalculatorType
 	public void setCalculatorType(String calculatorType) {
+
 		this.calculatorType = calculatorType;
 	}
 	

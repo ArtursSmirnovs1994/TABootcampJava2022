@@ -3,6 +3,8 @@
  */
 package sef.module2.activity;
 
+import java.sql.SQLOutput;
+
 /**
  * @author
  *
@@ -31,7 +33,7 @@ public class Calculator {
 
 	private static int subtract(int x, int y) {
         //TODO implement subtraction
-
+		int diff = x - y;
 		return diff;
 	}
 
@@ -49,12 +51,17 @@ public class Calculator {
 		int divValue = 0;
 		if (x == 0 && y == 0) {
 			//TODO complete the code so message is printed that dividing 0 with 0 is not possible
+			System.out.println("Dividing 0 with 0 is not possible");
+
 
 		} else if (y == 0) {
-		    //TODO complete the code so message is printed that division by 0 is not possible
+			//TODO complete the code so message is printed that division by 0 is not possible
+			System.out.println("Division by 0 is not possible");
+
 
 		} else {
-		    //TODO complete the code so that division is done
+			//TODO complete the code so that division is done
+			divValue = x/y;
 
         }
 		return divValue;
