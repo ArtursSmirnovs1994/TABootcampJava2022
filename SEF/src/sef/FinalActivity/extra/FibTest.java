@@ -37,10 +37,16 @@ public class FibTest {
 
     @Test
     public void testPrintFibonacci() {
-        String expected = "[0, 0, 1, 2, 3, 5, 8, 13, 21, 34]";
+        String expected = "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]";
         Assert.assertEquals(expected,
                 Arrays.toString(
-                    printFibonacci(10)
+                    printFibonacci(10L)
+                )
+        );
+        expected = "[0, 1, 1, 2, 3, 5, 8]";
+        Assert.assertEquals(expected,
+                Arrays.toString(
+                        printFibonacci(7L)
                 )
         );
     }
