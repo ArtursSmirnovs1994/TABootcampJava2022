@@ -4,7 +4,9 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import sef.FinalActivity.FirstActivity.Employee;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -38,7 +40,19 @@ public class EmployeeExtraTest extends TestCase {
 
     public void testPrintEmployeesToFile() {
         try {
-            printToFile(employees, "src\\sef\\FinalActivity\\extra\\fileOutput\\hello.txt");
+            String fileName = "src\\sef\\FinalActivity\\extra\\fileOutput\\hello.txt";
+            String fileNameCopy = "src\\sef\\FinalActivity\\extra\\fileOutput\\Copy of hello.txt";
+
+            printToFile(employees, fileName);
+            File f = new File(fileName);
+            assertTrue(f.exists() );
+            printToFile(employees, fileName);
+            File f2 = new File(fileNameCopy);
+            assertTrue(f.exists() );
+
+            f.delete();
+            f2.delete();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
