@@ -1,13 +1,13 @@
 package sef.module8.sample.additionalSamples;
-// Complete Code
+/*// Complete Code
 import sef.module8.sample.NameComparator;
 
 import java.util.Arrays;
 
-/*
+
 This Java comparator example compares employees on the basis of
 their age and name and sort them in that order.
-*/
+
  
 public class JavaComparatorExample{
     
@@ -42,7 +42,7 @@ public class JavaComparatorExample{
        
         IMPORTANT: All methods defined by Arrays class are static. Arrays class        
         serves as a utility class.
-        */
+
        
         //Sorting array on the basis of employee age by passing AgeComparator
         Arrays.sort(employee, new AgeComparator());
@@ -63,3 +63,4 @@ public class JavaComparatorExample{
     }
  
 }
+*/

@@ -15,7 +15,20 @@ public class TryCatchFinallySample {
 	{
 		//As long as we try to print it, it'd work and print null.		
 		System.out.println(str);
-		
+		try {
+
+			System.out.println(str.toUpperCase());
+		} catch
+		(NullPointerException nullPointerException) {
+			System.out.println("Error");}
+		finally {
+			str="Now it's a final value";
+			System.out.println(str);
+		}
+	}
+
+
+
 		//However, when we try to execute any operations on it, it'd throw a NullPointerException 
 		//Uncomment the following line and then run to see what happens.
 		//System.out.println(str.toUpperCase());
@@ -30,4 +43,4 @@ public class TryCatchFinallySample {
 		
 	}
 	
-}
+
