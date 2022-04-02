@@ -1,9 +1,15 @@
 package sef.FinalActivity.FirstActivity;
 
+import sef.FinalActivity.extra.everydayLife;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Comparator;
 import java.util.Random;
+import java.util.Scanner;
 
-public class Employee extends Person {
+public class Employee extends Person implements everydayLife {
 
     public Employee(String jobTitle, String company) {
         this.jobTitle = jobTitle;
@@ -18,6 +24,7 @@ public class Employee extends Person {
         this.salary = assignSalary();
 
     }
+
     private String jobTitle;
     private String company;
 
@@ -70,6 +77,22 @@ public class Employee extends Person {
         return getName().substring(getName().indexOf(' '));
     }
 
+        @Override
+        public String doWork() {
+            String result =  String.format(
+                    "%s goes to %s to do %s stuff",
+                    getName(),
+                    getCompany(),
+                    getJobTitle()
+            );
+            return result;
+        }
+
+    public String doRest() {
+        String result = this.getName() + ' ' + everydayLife.super.doRest(personalHobby);
+        return result;
+    }
+
     public static class salaryComparator implements Comparator<Employee> {
         public int compare(Employee emp1, Employee emp2) {
             int salary1 = emp1.getSalary();
@@ -92,5 +115,39 @@ public class Employee extends Person {
             String secondName2 = emp2.getSecondName();
             return secondName1.compareTo(secondName2);
         }
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s [%s, %s, %s]\n", this.getName(), jobTitle, company, salary);
+    }
+
+    public static void printToFile(Employee[] employees) throws IOException {
+        Scanner c = new Scanner(System.in);
+        System.out.printf("Enter the filename to save to in the current directory%n> ");
+//        String input = c.nextLine().trim();
+        String input = "hello.txt";
+        System.out.println(input);
+        char separator;
+        if (System.getProperty("os.name").contains("Windows") || System.getProperty("os.name").contains("windows")
+        ) {
+            separator = '\\';
+        } else {
+            separator = '/';
+        }
+        int separatorIndex = input.lastIndexOf(separator);
+        if (separatorIndex == -1) separatorIndex = 0;
+        input = input.substring(
+                separatorIndex
+        );
+        if (input.length() == 0) {
+            System.out.println("Empty filename");
+            return;
+        }
+        BufferedWriter outputFile = new BufferedWriter(new FileWriter(input));
+        for (Employee e : employees) {
+            outputFile.write(e.toString());
+        }
+        outputFile.close();
     }
 }

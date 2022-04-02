@@ -1,6 +1,8 @@
 package sef.FinalActivity.FirstActivity;
 
 
+import sef.FinalActivity.extra.Activity;
+
 public class Person {
 
     public Person() {
@@ -13,7 +15,15 @@ public class Person {
 
     private String name;
     private int age;
+    Activity personalHobby;
 
+    public Activity getPersonalHobby() {
+        return personalHobby;
+    }
+
+    public void setPersonalHobby(Activity personalHobby) {
+        this.personalHobby = personalHobby;
+    }
     public String getName() {
         return name;
     }
