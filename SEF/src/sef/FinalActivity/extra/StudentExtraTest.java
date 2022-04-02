@@ -22,7 +22,9 @@ public class StudentExtraTest {
         String expectedWork = String.format("%s goes to the lectures at %s",
                 testee.getName(),
                 testSchoolName);
-        Assert.assertEquals(expectedWork, testee.doWork());
+        String actualResult = testee.doWork();
+        System.out.println(actualResult);
+        Assert.assertEquals(expectedWork, actualResult);
 
         String testHobbyStr = "skydive";
         String testCompany = "with a buddy";
@@ -38,7 +40,7 @@ public class StudentExtraTest {
                 testLocation,
                 testFrequency
         );
-        String actualResult = testee.doRest();
+        actualResult = testee.doRest();
         System.out.println(actualResult);
         Assert.assertEquals(expectedRest, testee.doRest());
 

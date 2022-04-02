@@ -3,11 +3,16 @@ package sef.FinalActivity.FirstActivity;
 import sef.FinalActivity.extra.everydayLife;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
+
+import static java.io.File.separator;
 
 public class Employee extends Person implements everydayLife {
 
@@ -77,16 +82,16 @@ public class Employee extends Person implements everydayLife {
         return getName().substring(getName().indexOf(' '));
     }
 
-        @Override
-        public String doWork() {
-            String result =  String.format(
-                    "%s goes to %s to do %s stuff",
-                    getName(),
-                    getCompany(),
-                    getJobTitle()
-            );
-            return result;
-        }
+    @Override
+    public String doWork() {
+        String result = String.format(
+                "%s goes to %s to do %s stuff",
+                getName(),
+                getCompany(),
+                getJobTitle()
+        );
+        return result;
+    }
 
     public String doRest() {
         String result = this.getName() + ' ' + everydayLife.super.doRest(personalHobby);
@@ -123,31 +128,41 @@ public class Employee extends Person implements everydayLife {
     }
 
     public static void printToFile(Employee[] employees) throws IOException {
-        Scanner c = new Scanner(System.in);
-        System.out.printf("Enter the filename to save to in the current directory%n> ");
-//        String input = c.nextLine().trim();
-        String input = "hello.txt";
-        System.out.println(input);
-        char separator;
-        if (System.getProperty("os.name").contains("Windows") || System.getProperty("os.name").contains("windows")
-        ) {
-            separator = '\\';
-        } else {
-            separator = '/';
+        printToFile(employees, "");
+    }
+
+    public static void printToFile(Employee[] employees, String input) throws IOException {
+        if (input.isEmpty()) {
+            Scanner c = new Scanner(System.in);
+            System.out.printf("Enter the filename to save to in the current directory%n> ");
+            input = c.nextLine().trim();
         }
-        int separatorIndex = input.lastIndexOf(separator);
-        if (separatorIndex == -1) separatorIndex = 0;
-        input = input.substring(
-                separatorIndex
-        );
+        System.out.println(input);
         if (input.length() == 0) {
             System.out.println("Empty filename");
             return;
         }
-        BufferedWriter outputFile = new BufferedWriter(new FileWriter(input));
-        for (Employee e : employees) {
-            outputFile.write(e.toString());
+        int fileXtensionLength = input.length() - 1 - input.lastIndexOf('.');
+
+        String workingDir = "";
+        Path path = Paths.get(workingDir).toAbsolutePath();
+        workingDir = path + separator;
+
+        File outputFile = new File(workingDir + input);
+        String fileName = outputFile.getName();
+        String filePath = outputFile.getParent() + separator;
+        while (outputFile.exists()) {
+            fileName = "Copy of " + fileName;
+            outputFile = new File(filePath + fileName);
+
         }
-        outputFile.close();
+        new File(filePath).mkdirs();
+        System.out.println(outputFile);
+
+        BufferedWriter outputWriter = new BufferedWriter(new FileWriter(outputFile));
+        for (Employee e : employees) {
+            outputWriter.write(e.toString());
+        }
+        outputWriter.close();
     }
 }

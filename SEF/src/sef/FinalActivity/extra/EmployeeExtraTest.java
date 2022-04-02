@@ -38,7 +38,7 @@ public class EmployeeExtraTest extends TestCase {
 
     public void testPrintEmployeesToFile() {
         try {
-            printToFile(employees);
+            printToFile(employees, "src\\sef\\FinalActivity\\extra\\fileOutput\\hello.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -53,7 +53,9 @@ public class EmployeeExtraTest extends TestCase {
                 testee.getCompany(),
                 testee.getJobTitle()
         );
-        assertEquals(expectedWork, testee.doWork());
+        String actualResult = testee.doWork();
+        System.out.println(actualResult);
+        assertEquals(expectedWork, actualResult);
 
         String testHobbyStr = "have dinner";
         String testCompany = "with other people";
@@ -69,7 +71,7 @@ public class EmployeeExtraTest extends TestCase {
                 testLocation,
                 testFrequency
         );
-        String actualResult = testee.doRest();
+        actualResult = testee.doRest();
         System.out.println(actualResult);
         assertEquals(expectedRest, testee.doRest());
 
