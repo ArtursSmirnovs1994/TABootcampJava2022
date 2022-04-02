@@ -3,6 +3,7 @@ package sef.FinalActivity.extra;
 import javax.annotation.Nullable;
 import java.io.Console;
 import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -16,12 +17,14 @@ public class Fib {
      * Returns 0 for negative numbers*/
     private static BigInteger calculateFibonacci(Long numberN, @Nullable Map<Long, BigInteger> storedResults) {
         if (numberN == 0) {
+            storedResults.put(0L, BigInteger.ZERO);
             return BigInteger.ZERO;
         }
         if (numberN < 0) {
             return BigInteger.ZERO;
         }
         if (numberN <= 2) {
+            storedResults.put(numberN-1, BigInteger.ONE);
             return BigInteger.ONE;
         }
         if (storedResults == null) {
@@ -35,6 +38,42 @@ public class Fib {
         );
         storedResults.put(numberN, result);
         return result;
+    }
+
+    public static BigInteger calculateFibonacci2(Integer numberN, BigInteger[] storedResults, BigInteger[] outputResults) {
+        if (numberN == 0) {
+            storedResults[0] = BigInteger.ZERO;
+            return BigInteger.ZERO;
+        }
+        if (numberN < 0) {
+            return BigInteger.ZERO;
+        }
+        if (numberN == 1) {
+            storedResults[1] = BigInteger.ONE;
+            return BigInteger.ONE;
+        }
+        if (!(storedResults[Math.toIntExact(numberN-1)].equals(BigInteger.ZERO)) ) {
+            return storedResults[Math.toIntExact(numberN-1)];
+        }
+        BigInteger result = (calculateFibonacci2(numberN - 1, storedResults, outputResults).add(
+                calculateFibonacci2(numberN - 2, storedResults, outputResults))
+        );
+        storedResults[Math.toIntExact(numberN-1)]= result;
+        outputResults[Math.toIntExact(numberN)]= result;
+        return result;
+    }
+
+    public static BigInteger[] printFibonacci(Integer count) {
+        BigInteger[] storedResults = new BigInteger[count];
+        BigInteger[] outputResults = new BigInteger[count];
+        Arrays.fill(storedResults, BigInteger.ZERO);
+        Arrays.fill(outputResults, BigInteger.ZERO);
+
+        calculateFibonacci2(count-1,storedResults, outputResults);
+        System.out.println(
+                Arrays.toString(outputResults)
+        );
+        return outputResults;
     }
 
     final Integer MAX_INPUT = 5000; // HashMap may break at about 6600
@@ -84,15 +123,19 @@ public class Fib {
             return ValidationResult.USER_EXIT;
         }
         try {
-            new BigInteger(input);
+            Long.parseLong(input);
         } catch (NumberFormatException nfe) {
             return ValidationResult.NOT_A_NUMBER;
         }
-        if (Integer.parseInt(input) > MAX_INPUT) {
+        try {
+            if (Long.parseLong(input) > MAX_INPUT) {
             return ValidationResult.MAX_EXCEEDED;
         }
-        if (Integer.parseInt(input) < 0) {
+        if (Long.parseLong(input) < 0) {
             return ValidationResult.NEGATIVE_NUMBER;
+        }
+        } catch (NumberFormatException nfe) {
+            return ValidationResult.MAX_EXCEEDED;
         }
         return ValidationResult.OK;
     }
