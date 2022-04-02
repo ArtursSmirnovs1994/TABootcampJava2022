@@ -11,18 +11,26 @@ public class AnimalActivity {
 
 
 
-        Mammal mammal = new Mammal("Flexy");
+        Mammal mammalCat = new Mammal("Fluffy");
+        Mammal mammalDog = new Mammal("Rex");
 
         //TODO: For mammal set animal to cat
-        mammal.setAnimal(cat);
+        mammalCat.setAnimal(cat);
+
         //TODO: execute for mammal animalIsSleeping()
+        mammalCat.animalIsSleeping();
 
         //TODO: execute for mammal animalIsSpeaking()
+        mammalCat.animalIsSpeaking();
 
         //TODO: For mammal set animal to dog
-        mammal.setAnimal(dog);
+        mammalDog.setAnimal(dog);
+
         //TODO: execute for mammal animalIsSleeping()
+        mammalDog.animalIsSleeping();
 
         //TODO: execute for mammal animalIsSpeaking()
+        mammalDog.animalIsSpeaking();
+
     }
 }

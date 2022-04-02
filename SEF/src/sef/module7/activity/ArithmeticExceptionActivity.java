@@ -2,12 +2,15 @@ package sef.module7.activity;
 
 // Needs to be completed
 public class ArithmeticExceptionActivity {
+
+    //TODO: 1 - Type main method
+
     public static void main(String[] args) {
         ArithmeticExceptionActivity obj = new ArithmeticExceptionActivity();
         obj.catchMe(10, 0);
         obj.catchMe(10, 2);
     }
-    //TODO: 1 - Type main method
+
 
     //TODO: 2  Create an instance of ArithmeticExceptionActivity and call catchMe with 10 and 0
 

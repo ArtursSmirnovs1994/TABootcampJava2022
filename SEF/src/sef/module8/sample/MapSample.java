@@ -27,7 +27,7 @@ public class MapSample {
 
     }
 
-    void print(Map map) {
+    public void print(Map map) {
         //Keys are maintained as set in map.
         Set keySet = map.keySet();
 

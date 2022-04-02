@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10ed22f9-669e-4545-974f-f0ec4cee576f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/SEF/SEF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/SEF.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module5/activity/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module5/activity/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module5/activity/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module5/activity/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module6/activity/AnimalActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module6/activity/AnimalActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module6/activity/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module6/activity/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module6/activity/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module6/activity/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module6/activity/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module6/activity/Mammal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module7/activity/ArithmeticExceptionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module7/activity/ArithmeticExceptionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module7/activity/ExceptionSequenceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module7/activity/ExceptionSequenceActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module8/activity/ListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module8/activity/ListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module8/activity/MapActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module8/activity/MapActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module8/activity/SetActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module8/activity/SetActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module8/sample/ListSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module8/sample/ListSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module8/sample/MapSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module8/sample/MapSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module8/sample/SetSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module8/sample/SetSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module8/sample/additionalSamples/AgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module8/sample/additionalSamples/AgeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module9/activity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module9/activity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module9/activity/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module9/activity/PersonTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27CgzSG0ljrDWhXM0Mbxzq2i1jV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10ed22f9-669e-4545-974f-f0ec4cee576f" name="Changes" comment="" />
+      <created>1648829743787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648829743787</updated>
+    </task>
+    <servers />
+  </component>
+</project>
