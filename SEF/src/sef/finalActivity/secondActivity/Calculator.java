@@ -15,6 +15,11 @@ public class Calculator {
         return a * b;
     }
 
+
+    // I know, that int cannot return null,
+    // so this way it will try to make the illegal division by 0 anyway.
+    // But it will also catch the illegal argument message and present it.
+
     public int doDivide(int a, int b) {
         try {
             return a / b;
