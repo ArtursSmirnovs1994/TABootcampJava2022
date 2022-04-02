@@ -28,13 +28,13 @@ public class StudentTest extends TestCase {
 
         String newName = "Beta";
         studentToTest.setSchoolName(newSchoolName);
-        assertEquals(studentToTest.getSchoolName(),newSchoolName);
+        assertEquals(studentToTest.getSchoolName(), newSchoolName);
 
     }
 
-    public void testIntroduceMe() {
-
-        assertEquals("My name is null and I study in university BUSKU", studentToTest.introduceMe());
+    public void testIntroduceMe() throws CustomExceptionFirst {
+        studentToTest.setName("Reinis");
+        assertEquals("My name is Reinis and I study in university BUSKU", studentToTest.introduceMe());
 
     }
 

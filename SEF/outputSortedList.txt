@@ -1,0 +1,7 @@
+
+
+Order of employee after sorting by employee salary is
+Employee 1 name :: Zuzanna, Salary :: 90000.0
+Employee 2 name :: Alnis, Salary :: 50000.5
+Employee 3 name :: Rita, Salary :: 30000.0
+Employee 4 name :: Biruta, Salary :: 5500.6

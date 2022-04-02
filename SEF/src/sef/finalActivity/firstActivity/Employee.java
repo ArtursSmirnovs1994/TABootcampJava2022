@@ -1,6 +1,6 @@
 package sef.finalActivity.firstActivity;
 
-public class Employee extends Person {
+public class Employee extends Person implements Humanity {
 
     String jobTitle;
     String company;
@@ -58,11 +58,5 @@ public class Employee extends Person {
 
 
 
-//    @Override
-//    public String toString() {
-//        return "Employee{" +
-//                "salary=" + salary +
-//                ", name='" + name + '\'' +
-//                '}';
-//    }
+
 }

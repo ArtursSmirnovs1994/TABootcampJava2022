@@ -1,6 +1,8 @@
 package sef.finalActivity.firstActivity;
 
-public class Students extends Person {
+import sef.module6.activity.Animal;
+
+public class Students extends Person implements Humanity {
 
     String schoolName;
 

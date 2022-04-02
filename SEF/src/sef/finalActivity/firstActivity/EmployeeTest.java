@@ -1,11 +1,15 @@
 package sef.finalActivity.firstActivity;
 
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.PrintStream;
 import java.util.Arrays;
 
 public class EmployeeTest {
 
-    public static void main(String arg[]) throws CustomExceptionFirst {
+    public static void main(String arg[]) throws CustomExceptionFirst, FileNotFoundException {
 
         Employee employee[] = new Employee[4];
 
@@ -29,26 +33,19 @@ public class EmployeeTest {
         Arrays.sort(employee, new SalaryComparator());
         System.out.println("\n\nOrder of employee after sorting by employee salary is");
 
-        for(int i=0; i < employee.length; i++){
-            System.out.println( "Employee " + (i+1) + " name :: " + employee[i].getName() + ", Salary :: " + employee[i].getSalary());
+        for (int i = 0; i < employee.length; i++) {
+            System.out.println("Employee " + (i + 1) + " name :: " + employee[i].getName() + ", Salary :: " + employee[i].getSalary());
+
+
         }
 
-//        Employee one = new Employee();
-//        one.setName("Alnis");
-//        one.setSalary(50000.50);
-//
-//        Employee two = new Employee();
-//        two.setName("Zuzanna");
-//        two.setSalary(90000);
-//
-//        Employee three = new Employee();
-//        three.setName("Rita");
-//        three.setSalary(30000);
-//
-//        Employee four = new Employee();
-//        four.setName("Biruta");
-//        four.setSalary(5500.60);
+        // This is extra, to save sorted list to txt file
+        PrintStream out = new PrintStream(new FileOutputStream("outputSortedList.txt"));
+        System.setOut(out);
+        System.out.println("\n\nOrder of employee after sorting by employee salary is");
+        for (int i = 0; i < employee.length; i++) {
+            System.out.println("Employee " + (i + 1) + " name :: " + employee[i].getName() + ", Salary :: " + employee[i].getSalary());
 
-
+        }
     }
 }
