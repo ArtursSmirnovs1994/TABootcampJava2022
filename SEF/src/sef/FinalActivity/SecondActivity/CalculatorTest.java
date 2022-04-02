@@ -86,5 +86,12 @@ public class CalculatorTest extends TestCase {
         assertEquals((double)a / b, calc.Divide(a, b));
         assertEquals((double)b / a, calc.Divide(b, a));
     }
+    public void testDivisionByZero() {
 
+        int a = 30;
+        int b = 0;
+        if (b==0)
+        System.out.println("You should not divide a number by zero");
+
+    }
 }
