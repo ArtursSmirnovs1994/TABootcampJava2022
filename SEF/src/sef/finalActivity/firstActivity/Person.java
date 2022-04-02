@@ -11,7 +11,7 @@ public class Person {
 
     public void setName(String name) throws CustomExceptionFirst {
 
-        if (name.matches("(?i)[a-z](.*[a-z])?")) {
+        if (name.matches("^[a-zA-Z]*$")) {
             this.name = name;
         } else {
             throw new CustomExceptionFirst();
