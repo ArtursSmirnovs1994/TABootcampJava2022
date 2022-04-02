@@ -14,7 +14,7 @@ public class NumToWordsUsingMethod {
 		 */
 		public static void main(String[] args) {
 			//TODO complete the code to print text value of 8, 9 and 10
-			printMyWord();
+			printMyWord(10);
 
 		}
 
@@ -22,27 +22,27 @@ public class NumToWordsUsingMethod {
 			final String numText;
 			switch(i) {
 			case 1:
-				numText = "ONE";break;
+				numText = " The number you entered is : ONE";break;
 			case 2:
-				numText = "TWO";break;
+				numText = " The number you entered is : TWO";break;
 			case 3:
-				numText = "THREE";break;
+				numText = " The number you entered is : THREE";break;
 			case 4:
-				numText = "FOUR";break;
+				numText = " The number you entered is : FOUR";break;
 			case 5:
-				numText = "FIVE";break;
+				numText = " The number you entered is : FIVE";break;
 			case 6:
-				numText = "SIX";break;
+				numText = " The number you entered is : SIX";break;
 			case 7:
-				numText = "SEVEN";break;
+				numText = " The number you entered is : SEVEN";break;
 			case 8:
-				numText = "EIGHT";break;
+				numText = " The number you entered is : EIGHT";break;
 			case 9:
-				numText = "NINE";break;
+				numText = " The number you entered is : NINE";break;
 			case 10:
-				numText = "TEN";break;
+				numText = " The number you entered is : TEN";break;
 			default:
-				numText = "NUMBER " + i;
+				numText = "  The number you entered is : " + i +" Enter 1 to 10";
 			}
 			System.out.println(numText);
 			

@@ -19,11 +19,18 @@ public class PrintNumWithWhile {
 		int i = 0;
 		while(i<100){
 			System.out.println(i);
-			i=i+2;			
+			i=i+2;
+		}
+
+
+		int a = 1;
+		while(a<100){
+			System.out.println(a);
+			a=a+2;
 		}
 		
 		 
-		//TODO: write code to Print all odd numbers less than 100
+
 
 	}
 

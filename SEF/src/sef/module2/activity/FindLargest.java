@@ -26,17 +26,17 @@ public class FindLargest {
 
 		// Find Largest of three numbers
 				
-		int i = 1, j = 2, k = 10;
+		int i = 20, j = 20, k = 10;
 		//Compares that i is greater than j
 		if (i > j) {
-			if //TODO: complete code
+			if (i > k)
 			{
 				System.out.println(i + " is Largest of three numbers");
 			} else {
 				System.out.println(k+ " is Largest of three numbers");
 			}
 		} else {
-			if ///TODO: complete code
+			if (j > k)
 			{
 				System.out.println(j+ " is Largest of three numbers");
 			} else {

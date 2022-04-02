@@ -6,6 +6,17 @@ public class PersonTest extends TestCase {
 
     private Person person;
 
+    private int testweight;
+    private float testheight;
+
+
+    protected void setUp() throws Exception {
+        super.setUp();
+        //	Initialize variables to be used here
+        person = new Person(testweight,testheight);
+
+    }
+
     //TODO: create set up
 
     //TODO: create teardown

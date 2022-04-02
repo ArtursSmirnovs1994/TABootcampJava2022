@@ -18,6 +18,12 @@ public class VariableAssignmentActivity {
 		// 2- Update the value 
 		// 3- Print updated value to the console using System.out.println
 
+		int a=10;
+		a=10+5;
+		System.out.println("the value of a is" + a);
+
+
+
 	}
 
 }

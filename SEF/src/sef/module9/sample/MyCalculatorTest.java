@@ -35,6 +35,12 @@ public class MyCalculatorTest extends TestCase {
 		//	Checks the sum of two (2) negative values
 		assertEquals(-15, (theCalculator.getSum(a,b)));
 		assertEquals(-15, (theCalculator.getSum(b,a)));
+
+
+		a=2;
+		b=2;
+		assertEquals(4,(theCalculator.getSum(a,b)));
+
 	}
 
 	public void testGetDifference() {

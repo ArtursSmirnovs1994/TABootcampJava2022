@@ -2,6 +2,8 @@
 
 public class CastingSample {
 
+	//Sivakarthi sample 1st commit
+
 	public static void main(String arg[]){
 		
 		int intVar=1;
