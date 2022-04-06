@@ -4,7 +4,7 @@
 package sef.module2.activity;
 
 /**
- * @author 
+ * @author
  *
  */
 public class VariableAssignmentActivity {
@@ -17,6 +17,9 @@ public class VariableAssignmentActivity {
 		// 1- Declare a variable of type int and assign it default value.
 		// 2- Update the value 
 		// 3- Print updated value to the console using System.out.println
+		int b;
+		b=5;
+		System.out.println(b);
 
 	}
 

@@ -25,9 +25,9 @@ public class Student_I extends Person_I {
 	}
 	
 	// getter for String school
-	public String getSchool() {
-		return school;
-	}
+	public String getSchool() {	return school;
+		}
+
 	
 	// setter for String school
 	public void setSchool(String school) {

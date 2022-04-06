@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/sef/extra" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sef/module2" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sef/module3" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sef/module5" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sef/module6" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sef/module7" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sef/module8" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sef/module9" includeSubdirectories="true" />
+    </excludeFromCompile>
+  </component>
+</project>

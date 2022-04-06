@@ -16,7 +16,7 @@ public class PrintNumWithWhile {
 		
 		
 		// Print all even numbers less than 100
-		int i = 0;
+		int i = 2;
 		while(i<100){
 			System.out.println(i);
 			i=i+2;			
@@ -24,7 +24,11 @@ public class PrintNumWithWhile {
 		
 		 
 		//TODO: write code to Print all odd numbers less than 100
-
+		int b = 1;
+		while(b<100){
+			System.out.println(b);
+			b=b+2;
+		}
 	}
 
 }

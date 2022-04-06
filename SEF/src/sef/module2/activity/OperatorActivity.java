@@ -22,11 +22,15 @@ public class OperatorActivity {
 		System.out.println("Difference = " + result);
 		
 		// Add numbers
-		
+		int sum= i+j;
 		
 		// Print result
-		
-		
+		System.out.println("sum = " + sum);
+
+		int mod=i%j;
+		System.out.println("module = " + mod);
+		double dev=i/j;
+		System.out.println("division = " + dev);
 	}
 
 }
